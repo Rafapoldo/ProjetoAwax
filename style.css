@@ -30,7 +30,9 @@ header{
     background-color: #B28756;
     border-radius: 50%;
 }
-
+.menu-opener{
+    display: none;
+}
 .menu{
     flex:1;
     display: flex;
@@ -833,7 +835,7 @@ header{
 
 .section-contact{
     width: 540px;
-    height: 220px;
+    height: auto;
     margin: auto;
     
    
@@ -873,5 +875,383 @@ header{
     justify-content: center;
     width: 190px;
     margin-left:30%;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+.section-map{
+    background-image: url(complementos/mapa.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.section-map--area{
+    width: 100vw;
+    max-width: 1140px;
+    margin:auto;
+
+}
+.section-map--info{
+    width: 50%;
+    background-color: #ffffff;
+    color: black;
+    padding: 30px;
+    
+}
+    
+    
+.section-map--info-item{
+    display: flex;
+    align-items: center;
+    color: #999;
+    margin-bottom: 10px;
+    
+}
+
+.section-map--info-item-img{
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    background-color: #999;
+    border-radius: 15px;
+    margin-right: 15px;
+
+}
+.section-map--info-item-img img{
+    width: 15px;
+    height:auto;
+
+}
+
+
+
+footer{
+    background-color: black;
+}
+
+.footer--area {
+    width: 100vw;
+    max-width: 1140px;
+    margin:auto;
+    display:flex;
+    color: #ffffff;
+}    
+.footer-social {
+    justify-content: center;
+    
+}
+.footer-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    background-color: #555;
+    border-radius: 50%;
+} 
+.footer-social a:hover{
+    background-color: #b28756;
+}   
+
+.footer--item {
+    margin-top:30px;
+    margin-bottom:20px;
+    margin-right: 20px;
+    flex:1;
+    
+}
+.footer--item.area3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555;
+}
+.footer--item.area3 input{
+    width: 200px;
+    font-size: 15px;
+    background-color: #555;
+    border: none;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.footer--item.area3 button{
+    margin-left: 35px;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+  }
+
+
+
+
+
+
+  /*Responsividade*/
+
+  @media (min-width:450px) and (max-width:800px){
+      .logo{
+          margin-left: 30px;
+      }
+      .menu-opener{
+          width: 45px;
+          margin-right: 40px;
+          display: block;
+          
+      }
+      nav{
+          display: none;
+          position: absolute;
+          z-index: 99;
+          background-color: rgba(0, 0, 0, 0.9);
+          width: 70vw;
+          height: calc(100vh - 100px);
+          top:100px;
+          right: 0;
+
+      }
+      .menu ul{
+          flex-direction: column;
+      }
+      .menu li a{
+           font-weight: bold; 
+           font-size: 27px;
+           height: 80px;
+           margin-left: 50px;
+            border: 0;
+
+      } 
+      .menu li.active a{
+          color: #b28756;
+          border: 0;
+
+      }
+
+
+
+      .section-aboutus{
+          flex-direction: column;
+      }
+      .section-aboutus--left {
+          margin-left: 30px;
+          margin-right: 30px;
+          margin-bottom: 30px;
+      }
+      .section-aboutus--right {
+          width: auto;
+      }
+
+
+      .section-services{
+          flex-wrap: wrap;
+
+      }
+      .section-item{
+          min-width: 50%;
+          margin-bottom: 30px;
+      }
+      
+
+      .section-team{
+          max-width: 580px;
+      }
+      .section-companies li{
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          margin-right: 0;
+    
+      }
+      .section-price{
+        max-width: 540px;
+    }
+     
+
+      .section-map{
+          padding-left: 30px;
+          padding-right: 30px;
+      }    
+      .section-map--area{
+          width: auto;
+      }
+
+      .section-map--info{
+          width: auto;
+      } 
+      .section-map--info-item{
+          margin-bottom: 20px;
+      }
+      .section-map--info-item:last-child {
+          margin-bottom: 0;
+      }
+      .footer--area{
+          flex-direction: column;
+          
+      }
+      .footer--area .area1,
+      .footer--area .area2,
+      .footer--area .area3{
+          margin: auto;
+          padding: 10px;
+      }
+      .footer--area .area2{
+          margin-left: 20px;
+          margin-right: 20px;
+      }
+      .footer--area .area3{
+          margin-bottom: 20px;
+          margin-top: 20px;
+      }
+  }
+
+
+  /*Resposividade Celular*/
+
+  @media  (max-width:450px){
+    .logo{
+        margin-left: 30px;
+    }
+    .menu-opener{
+        width: 45px;
+        margin-right: 40px;
+        display: block;
+        
+    }
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top:100px;
+        right: 0;
+
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li a{''''''
+         font-weight: bold; 
+         font-size: 20px;
+         height: 60px;
+         margin-left: 30px;
+          border: 0;
+
+    } 
+    .menu li.active a{
+        color: #b28756;
+        border: 0;
+
+    }
+    .banner h1{
+        font-size: 30px;
+    }
+    .banner h2{
+        font-size: 17px;
+    }
+
+
+
+    .section-aboutus{
+        flex-direction: column;
+    }
+    .section-aboutus--left {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .section-aboutus--right {
+        width: auto;
+        margin-left:30px;
+        margin-right: 30px;
+    }
+    .section-aboutus--right img {
+        width: 100%;
+    }
+
+
+    .section-services{
+        flex-wrap: wrap;
+
+    }
+    .section-item{
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+    .section-projects--filters {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .section-projects--photo{
+        max-width: 320px;
+    }
+    .section-projects--photoarea{
+        width: 300px;
+        height:190px;
+    }
+
+    .section-companies li{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-right: 0;
+  
+    }
+    .section-price{
+        max-width: 344px;
+    }
+
+    .section-team{
+        max-width: 280px;
+    }
+    .section-map{
+        padding: 0;
+        padding-bottom: 250px;
+    }    
+    .section-map--area{
+        width: auto;
+    }
+
+    .section-map--info{
+        width: auto;
+    } 
+    .section-map--info-item{
+        margin-bottom: 20px;
+    }
+    .section-map--info-item:last-child {
+        margin-bottom: 0;
+    }
+    .footer--area{
+        flex-direction: column;
+        
+    }
+    .footer--area .area1,
+    .footer--area .area2,
+    .footer--area .area3{
+        margin: auto;
+        padding: 10px;
+    }
+    .footer--area .area2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .footer--area .area3{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 }
